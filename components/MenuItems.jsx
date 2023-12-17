@@ -13,18 +13,19 @@ const MenuItems = () => {
                 <tbody>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <td className="p-4 md:w-1/2">
-                            <h1 className='font-bold text-gray-900 dark:text-white'>Apple Watch</h1>
+                            <h1 className='font-bold text-gray-900 dark:text-white text-lg'>Apple Watch</h1>
                             <p>SAR 7.95</p>
                             <p>Fresh spinach, mushrooms, and hard-boiled egg served with warm bacon vinaigrette</p>
                             <br />
                             <div className="flex items-center">
                                 {cartCount > 0 ? <AfterCart /> : <BeforeCart />}
                             </div>
+                            <br />
+                            {cartCount > 0 ? <p className='text-red-600 font-semibold'>Customizations available</p> : ""}
                         </td>
                         <td className="hidden md:table-cell p-4">
-                            {/* Additional content for larger screens */}
                         </td>
-                        <td className="p-4 md:w-1/4 font-semibold text-gray-900 dark:text-white">
+                        <td className="p-4 md:w-1/4 font-semibold text-gray-900 dark:text-white text-base">
                             15 Calories
                         </td>
                         <td className="p-4 md:w-1/4">

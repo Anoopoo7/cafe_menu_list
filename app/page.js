@@ -7,6 +7,8 @@ const page = () => {
     <section className="flexStart flex-col paddings mb-16">
       <Categories />
       <MenuItems />
+      <MenuItems />
+      <MenuItems />
     </section>
   )
 }
