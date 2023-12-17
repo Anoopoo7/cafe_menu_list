@@ -11,7 +11,7 @@ const MenuItems = () => {
         <section className="relative overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-sm text-left rtl:text-right">
                 <tbody>
-                    <tr>
+                    <tr className="hover:bg-gray-50">
                         <td className="p-4 md:w-1/2">
                             <h1 className='font-bold text-gray-900 dark:text-white text-lg'>Apple Watch</h1>
                             <p>SAR 7.95</p>
