@@ -5,7 +5,7 @@ import BeforeCart from './buttons/BeforeCart';
 import AfterCart from './buttons/AfterCart';
 import { useSelector } from 'react-redux';
 
-const MenuItems = () => {
+const MenuItems = ({ dish_name, dish_image }) => {
     const { cartCount } = useSelector((state) => state.cart)
     return (
         <section className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -14,7 +14,7 @@ const MenuItems = () => {
                     <tr className="hover:bg-gray-50">
                         <td className="p-4 md:w-1/2">
                             <h1 className='font-bold text-gray-900 dark:text-white text-lg'>Apple Watch</h1>
-                            <p>SAR 7.95</p>
+                            <p>{dish_name ?? ""}</p>
                             <p>Fresh spinach, mushrooms, and hard-boiled egg served with warm bacon vinaigrette</p>
                             <br />
                             <div className="flex items-center">

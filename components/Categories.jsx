@@ -3,13 +3,14 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { categoryFilters } from "@/lib";
 
-const Categories = () => {
+const Categories = ({setCat}) => {
   const router = useRouter();
   const pathName = usePathname();
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
   const handleTags = (item) => {
     router.push(`${pathName}?category=${item}`);
+    setCat(item)
   };
 
   return (

@@ -1,5 +1,6 @@
 
   export const categoryFilters = [
+    "All",
     "Salads and Soup",
     "From The Barnyard",
     "From the Hen House",
